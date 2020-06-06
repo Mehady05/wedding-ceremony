@@ -1,0 +1,815 @@
+ @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&display=swap');
+ @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,900,700italic,700,600italic,600,400italic);
+ /*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Syrah - Wine Shop Html Template         |
+  |    Author: themesitem                                     |
+  |    Author Email: themesitem.cit@gmail.com                 |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+ /* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Index Page 
+        |----> Header css
+        |----> Sticky header css
+        |----> Banner Css
+        |----> About Css
+        |----> Product Css
+        |----> Event Css
+        |----> Offer Css
+        |----> Updates Css
+        |----> Footer Css
+        |----> Copyright Css
+3. Our Story Page
+        |----> Inner Page Title css
+        |----> About Part css
+        |----> Achievement Css
+4. Our Product Page
+5. Contact page
+        |----> Left img css
+        |----> Contact-form Css
+6. Error404 Page
+7. Blog-Details
+*/
+
+
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     font-family: 'Arvo', serif, 'Oswald', sans-serif, 'Pacifico', cursive;
+ }
+
+ ul,
+ li {
+     list-style: none;
+ }
+
+ h1.h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     padding: 0;
+     margin: 0;
+ }
+
+
+ a {
+     text-decoration: none !important;
+     display: inline-block;
+ }
+
+ button:focus {
+     outline: none;
+ }
+
+ .clr {
+     clear: both;
+ }
+
+ .bg_theme {
+     background-position: center !important;
+     background-repeat: no-repeat !important;
+     background-size: cover !important;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+
+ button:focus {
+     outline: none;
+ }
+
+ a:focus {
+     outline: none;
+ }
+
+ .bg_theme {
+     background-position: center !important;
+     background-repeat: no-repeat !important;
+     background-size: cover !important;
+ }
+
+
+
+ /* navbar start here  */
+ .navbar.navbar-expand-lg.sticky {
+     position: fixed;
+     background: #FFFFFF;
+     width: 100%;
+     z-index: 9999999;
+     top: 0;
+     left: 0;
+     animation: stickyani 2s;
+ }
+
+ .navbar.navbar-expand-lg {
+     position: absolute;
+     text-align: center !important;
+     z-index: 999;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .navbar {
+     text-align: center;
+     list-style-type: none;
+     font-family: 'Oswald',
+         sans-serif;
+     font-size: 13px;
+ }
+
+ .navbar .navbar-nav {}
+
+ .navbar .navbar-nav .nav-item {}
+
+ .navbar .navbar-nav .nav-item .nav-link {
+     color: #fff;
+     transition: all .5s linear;
+     padding-right: 5px;
+ }
+
+ .nav-link img {
+     height: 15px;
+     max-width: 100%;
+     background: transparent;
+ }
+
+ .round_love {
+     height: 100px;
+     width: 100px;
+     border-radius: 0%;
+     background-color: #f0394d;
+     color: #FFF;
+     text-align: center;
+     font-family: 'Arvo', serif;
+     line-height: 100px;
+     border-radius: 50%;
+     transition: all .5s linear;
+ }
+
+ .round_love:hover {
+     background: #8B3343;
+     color: #f0394d;
+ }
+
+ .round_love img {
+     height: 15px;
+     max-width: 100%;
+     background: transparent;
+     padding: 0;
+ }
+
+ .navbar .navbar-nav .nav-item .nav-link:hover {
+     color: #f0394d;
+ }
+
+
+
+ /* banner area  */
+ .banner_area {
+     padding: 150px 0;
+     height: 100%;
+ }
+
+ .banner_details {
+     font-family: 'Pacifico', cursive;
+     -ms-transform: rotate(-10deg);
+     -webkit-transform: rotate(-10deg);
+     transform: rotate(-10deg);
+     padding-top: 100px;
+     margin-bottom: 20px;
+     color: #fff;
+ }
+
+ .banner_details h2 {
+     font-size: 75px;
+     line-height: 50px;
+     margin-bottom: 25px;
+ }
+
+ .banner_details h3 {
+     font-size: 62px;
+ }
+
+ .banner_details h4 {
+     font-size: 47px;
+     line-height: 40px;
+ }
+
+ .banner_details h4 span {
+     color: #6FA169;
+ }
+
+ .banner_news {
+     margin-top: 30px;
+ }
+
+ .banner_news p {
+     letter-spacing: 3px;
+     padding: 2px 0px;
+     color: #6E1B28;
+     border-top: medium double #fff;
+     border-bottom: medium double #fff;
+     font-size: 14px;
+ }
+
+ /* happy couple  */
+ .happy_couple {
+     padding: 140px 0 140px 0;
+ }
+
+ .couple_details h1 {
+     font-size: 40px;
+     color: #333333;
+ }
+
+ .couple_details p {
+     margin-top: 20px;
+     font-family: 'Arvo', serif;
+     font-size: 15px;
+     line-height: 26px;
+     margin-bottom: 25px;
+ }
+
+ .inner_love {
+     margin-top: 20px;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ .inner_love span {
+     width: 30px;
+     height: 8px;
+     display: inline-block;
+     border-top: solid 2px #e1dddd;
+ }
+
+ .pink_heart {
+     color: #f0394d;
+     font-size: 27px;
+     position: relative;
+     z-index: 3;
+ }
+
+ .grey_heart {
+     color: #e1dddd;
+     font-size: 20px;
+     margin-left: -15px;
+     position: relative;
+     z-index: 2;
+ }
+
+ .couple_img {
+     position: relative;
+     margin-top: 30px;
+ }
+
+ .couple_love {
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translateX(-50%);
+     transition: all .3s linear;
+ }
+
+ .banner_news.cop_name {
+     margin-top: 8px;
+     transition: all .3s linear;
+ }
+
+ .cop_overlay {
+     position: absolute;
+     width: 95%;
+     height: 95%;
+     background: rgba(0, 0, 0, .4);
+     top: 14px;
+     left: 14px;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s linear;
+     border: 1px solid #fff;
+ }
+
+ .couple_img:hover .cop_overlay {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .couple_img:hover .inner_love.couple_love {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .couple_img:hover .banner_news.cop_name {
+     opacity: 0;
+     visibility: hidden;
+ }
+
+
+
+
+ .cop_overlay a {
+     background: transparent;
+     padding: 10px 50px;
+     font-size: 13px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: 1px solid #000;
+     color: #fff;
+     transition: all .3s linear;
+ }
+
+ .couple_img a:hover {
+     background: #f0394d;
+ }
+
+ .zoom {
+     position: relative;
+     margin: auto;
+     overflow: hidden;
+     width: 540px;
+ }
+
+ .zoom img {
+     max-width: 100%;
+     transition: all 0.3s;
+     display: block;
+     width: 100%;
+     height: auto;
+     transform: scale(1);
+ }
+
+ .zoom:hover img {
+     transform: scale(1.1);
+ }
+
+
+ .bor_details p {
+     font-family: 'Arvo', serif;
+     font-size: 15px;
+     line-height: 26px;
+     margin-top: 40px;
+     color: #6a6a6a;
+ }
+
+ .bor_details span {
+     font-weight: 800;
+     font-size: 20px;
+ }
+
+
+ /* count down area start  */
+ .counting {
+     padding-top: 140px;
+     padding-bottom: 140px;
+     height: 100%;
+     position: relative;
+     background-attachment: fixed !important;
+ }
+
+ .count_overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, .5);
+ }
+
+ .count_time {}
+
+ .countdown-section {
+     margin-right: 25px;
+ }
+
+ .countdown-section .countdown-amount {
+     display: inline-block;
+     font-size: 18px;
+     letter-spacing: 1px;
+     color: #fff;
+ }
+
+ .countdown-section .countdown-period {
+     display: inline-block;
+     font-size: 18px;
+     color: #fff;
+ }
+
+ .timer {
+     font-family: 'Titillium Web',
+         cursive;
+     width: 800px;
+     margin: 0 auto;
+     text-align: center;
+     color: white;
+     background: #222;
+     font-weight: 100;
+     display: inline-block;
+     line-height: 1;
+     padding: 20px;
+     font-size: 40px;
+ }
+
+
+ #days {
+     font-size: 35px;
+     color: #db4844;
+     padding-right: 25px;
+ }
+
+ #hours {
+     font-size: 35px;
+     color: #f07c22;
+     padding-right: 25px;
+ }
+
+ #minutes {
+     font-size: 35px;
+     color: #f6da74;
+     padding-right: 25px;
+ }
+
+ #seconds {
+     font-size: 35px;
+     color: #abcd58;
+ }
+
+ #timer {
+     display: flex;
+     text-align: center;
+     align-items: center;
+ }
+
+
+ /* the wedding  */
+ .wedding {
+     padding-top: 140px;
+     padding-bottom: 140px;
+     background: #F6F6F6;
+ }
+
+ .single_wedding {
+     padding-top: 35px;
+ }
+
+ .sing_wed_img {
+     position: relative;
+ }
+
+ .sing_wed_img img {}
+
+ .sing_wed_overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, .5);
+     transition: all .3s linear;
+     opacity: 0;
+     visibility: hidden;
+ }
+
+ .sing_wed_overlay a {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     padding: 10px 20px;
+     background: transparent;
+     transform: translate(-50%, -50%);
+     font-size: 14px;
+     border: 1px solid #fff;
+     color: #fff;
+     transition: all .3s linear;
+     transition-delay: .5s;
+ }
+
+ .sing_wed_overlay a:hover {
+     background: #f0394d;
+ }
+
+ .sing_wed_details {
+     background: #fff;
+     padding-left: 15px;
+     padding-bottom: 15px;
+ }
+
+ .sing_wed_details h2 {
+     text-transform: capitalize;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     font-size: 20px;
+ }
+
+ .sing_wed_details p {
+     font-family: 'Arvo', serif;
+     font-size: 15px;
+     line-height: 26px;
+     margin-bottom: 25px;
+     color: #6a6a6a;
+ }
+
+ .single_wedding:hover .sing_wed_overlay {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .wed_zoom {
+     position: relative;
+     margin: auto;
+     overflow: hidden;
+     width: 350px;
+ }
+
+ .wed_zoom img {
+     max-width: 100%;
+     transition: all 0.3s;
+     display: block;
+     width: 100%;
+     height: auto;
+     transform: scale(1);
+ }
+
+ .wed_zoom:hover img {
+     transform: scale(1.1);
+ }
+
+ /* attend start */
+ .attending {}
+
+ .attend_details h2 {}
+
+ .attend_details p {}
+
+ .attend_details a {
+     padding: 5px 43px;
+     border: 1px soild red !important;
+     border: 1px solid red;
+     margin-top: 20px;
+     transition: all .3s linear;
+     color: #f0394d;
+ }
+
+ .attend_details a:hover {
+     background: #f0394d;
+     color: #fff;
+ }
+
+
+ /* family */
+ .slide_wed {
+     padding: 140px 0px;
+ }
+
+ .slide_wed p {
+     padding: 50px 0;
+ }
+
+ .family_slide .slick-dots {
+     text-align: center;
+ }
+
+ .family_slide .slick-dots li {
+     display: inline-block;
+     margin-left: 10px;
+     margin-top: 33px;
+ }
+
+ .family_slide .slick-dots li:nth-child(1) button,
+ .family_slide .slick-dots li:nth-child(2) button,
+ .family_slide .slick-dots li:nth-child(3) button,
+ .family_slide .slick-dots li:nth-child(4) button,
+ .family_slide .slick-dots li:nth-child(5) button,
+ .family_slide .slick-dots li:nth-child(6) button,
+ .family_slide .slick-dots li:nth-child(7) button,
+ .family_slide .slick-dots li:nth-child(8) button,
+ .family_slide .slick-dots li:nth-child(9) button,
+ .family_slide .slick-dots li:nth-child(10) button {
+     height: 18px;
+     width: 18px;
+     border: 3px solid #353535;
+     border-radius: 50%;
+     position: relative;
+     background: transparent;
+     font-size: 0;
+ }
+
+
+ .family_slide .slick-dots li:nth-child(1) button::before,
+ .family_slide .slick-dots li:nth-child(2) button::before,
+ .family_slide .slick-dots li:nth-child(3) button::before,
+ .family_slide .slick-dots li:nth-child(4) button::before,
+ .family_slide .slick-dots li:nth-child(5) button::before,
+ .family_slide .slick-dots li:nth-child(6) button::before,
+ .family_slide .slick-dots li:nth-child(7) button::before,
+ .family_slide .slick-dots li:nth-child(8) button::before,
+ .family_slide .slick-dots li:nth-child(9) button::before,
+ .family_slide .slick-dots li:nth-child(10) button::before {
+     content: '';
+     position: absolute;
+     left: 3px;
+     top: 3px;
+     width: 6px;
+     height: 6px;
+     background: #744fa0;
+     border-radius: 50%;
+     opacity: 0;
+ }
+
+
+ .family_slide .slick-dots li:nth-child(1).slick-active button,
+ .family_slide .slick-dots li:nth-child(2).slick-active button,
+ .family_slide .slick-dots li:nth-child(3).slick-active button,
+ .family_slide .slick-dots li:nth-child(4).slick-active button,
+ .family_slide .slick-dots li:nth-child(5).slick-active button,
+ .family_slide .slick-dots li:nth-child(6).slick-active button,
+ .family_slide .slick-dots li:nth-child(7).slick-active button,
+ .family_slide .slick-dots li:nth-child(8).slick-active button,
+ .family_slide .slick-dots li:nth-child(9).slick-active button,
+ .family_slide .slick-dots li:nth-child(10).slick-active button {
+     border: 3px solid #744fa0;
+ }
+
+ .family_slide .slick-dots li:nth-child(1).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(2).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(3).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(4).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(5).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(6).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(7).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(8).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(9).slick-active button:before,
+ .family_slide .slick-dots li:nth-child(10).slick-active button:before {
+     opacity: 1;
+ }
+
+
+ /* video */
+ .heading_w_v {
+     padding-top: 80px;
+     padding-bottom: 30px;
+ }
+
+ .heading_w_v h2 {
+     text-transform: uppercase;
+     font-size: 24px;
+     color: #353535;
+     font-family: 'Raleway';
+     font-weight: 800;
+ }
+
+ .watch_video {}
+
+ .watch_video .watch_wrap {
+     position: relative;
+ }
+
+ .watch_video .watch_overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, .70);
+ }
+
+ .watch_overlay ul {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .watch_overlay ul li {
+     text-align: center;
+ }
+
+ .watch_overlay ul li a {
+     color: #f1f1f1;
+     font-size: 39px;
+ }
+
+ .watch_overlay ul li i {
+     font-size: 70px;
+ }
+
+ /* team_awesome  */
+ .aw-tm_img {
+     transition: all .3s linear;
+     margin-top: 116px;
+ }
+
+ .aw-tm_img:hover {
+     margin-top: 30px;
+ }
+
+
+ .img {
+     position: relative;
+ }
+
+ .img .aw_overlay {
+     background: rgba(0, 0, 0, .70);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s linear;
+ }
+
+ .img:hover .aw_overlay {
+     opacity: 1;
+     visibility: visible;
+ }
+
+ .aw-icon a {
+     color: #353535;
+     transition: all .3s linear;
+     font-size: 24px;
+ }
+
+ .aw-icon a:hover {
+     background-color: #744fa0;
+     color: #ffffff;
+ }
+
+ .aw-icon {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .aw-icon a {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     background: #ffffff;
+     line-height: 50px;
+     margin-left: 5px;
+ }
+
+ .team_text {
+     padding: 20px 30px;
+     border: 1px solid #ddd;
+     border-top: 0;
+     transform: translateY(-100%);
+     z-index: -9999;
+     transition: all .3s linear;
+ }
+
+ .aw-tm_img:hover .team_text {
+     transform: translateY(0);
+ }
+
+ .team_text h2 {
+     font-size: 18px;
+     font-weight: 800;
+     color: #353535;
+ }
+
+ .team_text span {
+     font-size: 15px;
+     font-family: open sans;
+     color: #555555;
+     display: block;
+     padding-top: 15px;
+ }
+
+ .team_text p {
+     font-family: open sans;
+     font-size: 14px;
+     color: #777777;
+     line-height: 24px;
+     padding-top: 25px;
+ }
+
+
+
+ /* last wedding  */
+ .last_wed {
+     padding: 140px 0;
+     height: 100vh;
+     margin-top: 100px;
+     background-attachment: fixed !important;
+ }
